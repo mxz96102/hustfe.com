@@ -1,0 +1,188 @@
+body {
+    background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flexbox {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+nav {
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    text-align: center;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    position: fixed;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(9, 39, 86, 0.5);
+    -webkit-box-shadow: 0 0 10px rgba(9, 39, 86, .8);
+    box-shadow: 0 0 10px rgba(9, 39, 86, .8);
+}
+
+nav .logo img {
+    height: 2rem;
+    width: auto;
+    margin-top: -0.5rem;
+}
+
+nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: auto;
+    margin: 0;
+    padding-top: 15px;
+    list-style: none;
+    padding: 0;
+    opacity: 1;
+}
+
+nav ul li {
+    width: 6rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: .8rem;
+}
+
+nav ul li a {
+    color: #98b0f1;
+    text-decoration: none;
+}
+
+section {
+    padding: 1rem;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section:nth-of-type(2n+1) {
+    background: #ddd
+}
+
+section.intro {
+    width: 100vw;
+    height: 60vw;
+    background: url(images/headone2.jpg);
+    background-size: 100% auto;
+    padding-top: 10vw;
+    text-align: center;
+}
+
+h1 {
+    margin: 1rem auto;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0.8;
+    font-family: 'PermanentMarker-Regular';
+}
+
+footer {
+    font-size: 0.9rem;
+    color: #232323;
+    text-align: center;
+    padding: 1rem;
+    background: #ddd
+}
+
+.intro p {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.intro h1 {
+    color: #fff;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+}
+
+.intro .blog {
+    padding-top: 3rem;
+}
+
+.intro a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border: 2px white solid;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.intro a:hover {
+    background: white;
+    color: #000;
+}
+
+.about img,
+.join img {
+    width: 60%;
+    height: auto;
+    border: 4px solid black;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+.project ul {
+    padding: 0;
+}
+
+.project ul li {
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+
+.project ul li div {
+    font-family: 'PermanentMarker-Regular';
+    margin: 1rem auto;
+    padding: 1rem;
+    font-size: 3rem;
+    width: 20rem;
+    color: white;
+}
+
+.project p {
+    color: white;
+}
+
+@media (max-width: 620px) {
+    html {
+        font-size: 10px;
+    }
+    .intro .blog {
+        padding-top: 0;
+    }
+    nav ul li:first-of-type {
+        display: none;
+    }
+}
